@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | A New Vision</title>
+    <style>
+        :root {
+            --primary: #977f67;
+            --bg-light: #ebe9e7;
+            --bg-alt: #fdfdfd;
+            --text-dark: #2d2d2d;
+            --text-muted: #666666;
+            --white: #ffffff;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            font-family: 'Optima', 'Didot', 'serif', 'Times New Roman';
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Large Header Text */
+        .main-heading {
+            font-size: 0.9rem;
+            letter-spacing: 0.8rem;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            animation: fadeIn 3s ease-in;
+            font-weight: 300;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 4rem 3rem;
+            border-radius: 2px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+            max-width: 550px;
+            width: 85%;
+            text-align: center;
+            border-top: 6px solid var(--primary);
+            position: relative;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .quote {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .quote-author {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--primary);
+        }
+
+        .divider {
+            width: 40px;
+            height: 1px;
+            background: var(--primary);
+            margin: 0 auto 2rem;
+        }
+
+        .loader-track {
+            width: 100%;
+            height: 1px;
+            background: #e0e0e0;
+            position: relative;
+            margin-top: 40px;
+        }
+
+        .loader-fill {
+            position: absolute;
+            height: 100%;
+            width: 99%;
+            background: var(--primary);
+            animation: slow-progress 15s ease-out infinite;
+        }
+
+        .status {
+            font-size: 0.65rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 15px;
+            color: var(--text-muted);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slow-progress {
+            0% { width: 0%; }
+            40% { width: 60%; }
+            90% { width: 98.5%; }
+            100% { width: 99%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-heading">Coming Spring 2026</div>
+
+    <div class="card">
+        <h1>Under Construction</h1>
+        <div class="divider"></div>
+        <p>Something beautiful is quietly being assembled. <br> 
+           Mostly because the developer is currently arguing with a semicolon.</p>
+        
+        <div class="loading-container">
+            <div class="track">
+                <div class="fill"></div>
+            </div>
+            <div class="loader-track">
+                <div class="loader-fill"></div>
+            </div>
+            <div class="status">Polishing the pixels... 99%</div>
+        </div>
+    </div>
+    
+</body>
+</html>
